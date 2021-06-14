@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Lab10|JavaScriptCanChangeHTMLContent</title>
+    <title> Lab10 Javascript</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="FaviconCZ.png">
-    <link rel="stylesheet" type="text/css" href="Lab10.css">
+    <div id="sty">
+      <link rel="stylesheet" type="text/css" href="lab10.css">
+    </div> 
   </head>
    <body>
 
-<nav>
-    <div class="topnav">
-      <p>NavBar</p>
+    <div class="header">
+    <h1>My Super Dooper Website </h1>
+    <p> Some of my best work!!!.</p>
+    <button id="ch" onclick="cssChange()"> Click Here to Style 1 change</button>
+    <button id="ch1" onclick="cssChange1()"> Click Here to Style 2 change</button>
+    <button id="ch0" onclick="cssChange0()"> Click Here to Style 3 change</button>
+    <button id="ch3" onclick="cssChange3()"> Click Here to Style 4 change</button>
     </div>
-    <ul>
-    <li><a href="index.html" class="active">Home </a></li>
-    <li><a href="../Lab1/Lab1Basic.html">About us </a></li>
-    <li><a href="../Lab2/Lab2.html">Proyects </a></li>
-    <li><a href="../Lab3/Lab3.html">News </a></li>
-    <li> <a href="../Lab4/Lab4BR3.html">Contact </a></li>
-       </ul>
-  </nav>
 
-   <div class="image">
-     <img src="wallnavbar.jpg" alt="wallpaper">
-   </div>
-  <div class="head">
-  <h1>QCC/CUNY</h1>
-  <h2>Micro-Credential </h2>
-  <h3>Boot Camp </h3>
-  <h4>Lab #9 </h4>
-  <h5>05/25/2021 </h5>
-  <h6>By Cristina Zurita </h6></div>
-  <br>
-  <br>
-       
-  <a href="index.html">Home Page </a>
- 
- <p id="demo">Click the button to change the text in this paragraph.</p>
+    <div class="topnav">
+      <a href="http://cnn.com">CNN</a>
+      <a href="http://w3schoold.com">W3SChools</a>
+      <a href="http://taehs.org">THE BEST HS ON EARTH</a>
+      <a href="http://cuny.edy">CUNY</a>
+    </div>
 
-<button onclick="myFunction()">Home</button>
+      <div class="row">
+        <div class="column">
 
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello Sunshine";
-}
-var x = document.getElementById("demo");   // Get the element with id="demo"
-x.style.color = "red";                     // Change the color of the element
-x.style.position
-</script>
+          <h2>HTML</h2>
+          <DIV id="opi"></DIV>
+          <p id="demo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed enim ut sem viverra aliquet eget. Viverra adipiscing at in tellus. Cursus mattis molestie a iaculis at. Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Dui id ornare arcu odio ut sem nulla. A lacus vestibulum sed arcu non odio. Egestas sed sed risus pretium. Purus viverra accumsan in nisl nisi scelerisque. Egestas fringilla phasellus faucibus scelerisque. Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Bibendum enim facilisis gravida neque convallis a cras semper. Leo duis ut diam quam.</p>
+        </div>
+        <div class="column">
+          <a href="#"><h2>CSS</h2></a>
+          <p id="pop">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed enim ut sem viverra aliquet eget. Viverra adipiscing at in tellus. Cursus mattis molestie a iaculis at. Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Dui id ornare arcu odio ut sem nulla. A lacus vestibulum sed arcu non odio. <i class="glyphicon glyphicon-bullhorn"></i>Egestas sed sed risus pretium. Purus viverra accumsan in nisl nisi scelerisque. Egestas fringilla phasellus faucibus scelerisque. Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Bibendum enim facilisis gravida neque convallis a cras semper. Leo duis ut diam quam.<i class="material-icons">heart</i></p></div>
+          <div class="column">
+            <h2>Javascript</h2>
+            <p id="pop">Egestas sed sed risus pretium. Purus viverra accumsan in nisl nisi scelerisque. Egestas fringilla phasellus faucibus scelerisque. Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Bibendum enim facilisis gravida neque convallis a cras semper. Leo duis ut diam quam.</p>
+          </div>
 
+    <script>
 
-</body>
-</html>   
+      function change (){
 
+        document.getElementById("pop").innerHTML="Hey Band! How are you?"
 
+      }
 
+      function cssChange(){
 
-
-
+        document,getElementById("sty").innerHTML="<link rel="stylesheet" type="text/css" href="lab10.css">";     }
+      </div>
+   </body>
+</html>

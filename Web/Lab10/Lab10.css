@@ -1,83 +1,65 @@
 *{
-  margin:0px;
-  padding: 0px;
   box-sizing:  border-box;
-}
-
-nav{
- width: 100%;
- height: 75px;
- background-color: #43cbb2;
- line-height: 75px;
- padding: 0px 100px;
- position: fixed;
- z-index: 1;
- 
 
 }
-
-nav .topnav{
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
+/*margin and padding*/
+body{ 
+  margin:3px;
+  padding: 10px;
+  overflow: scroll;
 }
+/*Style the header*/
+.header{
+  background-color: #f1f1f1;
+  padding: 20px;
+  color: white;
+  background-image: url("99810.jpg");
+  height: 280px;
+  background-size:  cover;
+}
+/*Style the top navogation bar */
 
-nav .topnav p{
+.topnav{
+  overflow: hidden;
+  background-color: #333;
+  
+}
+/*changes link color*/
+
+.topnav a {
   float: left;
-  color:#fff;
-  text-transform: uppercase;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 14px;
+  
 }
+/*changes roll over color */
 
-nav ul{
-float: right;
+.topnav a:hover{
+  background-color: #ddd;
+  color: #000;
+
 }
-nav ul li {
-  display:  inline-block;
-  list-style: none;
+/*sub body bg */
 
-  position: relative;
+.row{
+  background-color: ghostwhite; 
+
 }
+/*Clear floats after the columns */
 
-nav ul li a{
-  color:#fff;
-  text-decoration: none;
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 0px 15px
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+
 }
+/*Create three equal columns that flots next to each ither*/
+.column{
+  float: left;
+  width: 33.33%;
+  height: 50%;
+  padding: 15px;
 
-nav ul li a:hover{
-  color:#91a355;
-}
-
-nav ul li .active{
-  color:#91a355;
-}
-
-.image img{
-  width:  initial;
-  height: 0px  auto;
-  opacity: 0,80;
-}
-
-nav a::before{
-    content: '';
-    display:block;
-    height:5px;
-    width:100%;
-    background-color:#91a355;
-
-    position: absolute;
-    top:0;
-    Width:0%;
-
-    transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
-
- /* The navbar container / .topnav { overflow: hidden; background-color: #333; }
-/ Navbar links / .topnav a { float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; }
-/ Links - change color on hover / .topnav a:hover { background-color: #ddd; color: black; }*/
+} 
